@@ -1,1 +1,2 @@
 print("Jag heter Oscar Lundgren och jag läser programmeing på Alströmergymnasiet.\nJag tycker att det verkar \"kul\" med programmering.\nDessa tre rader\nhar jag skrivit med\nen enda print().\nFöljande saker har jag kommenterat i min kod:\n\t* Hur jag skrev ut dubbelfnuttarna på andra raden\n\t* Hur jag kunde skriva ut tre rader med en print().\n\t* Hur jag använde mig av tab, för att göra denna listan.")
+#hejsan
