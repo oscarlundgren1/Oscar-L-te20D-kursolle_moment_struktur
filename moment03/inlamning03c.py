@@ -1,11 +1,13 @@
+#Mycket av denna kod är samma som föregående
 salary = int(input("Vad är din bruttolön i kr varje månad? "))
 
+#Nya variablar tillkommer, ny skatt
 Municipal_tax = 0.2136
 County_council_tax = 0.1148
 breakingpoint_tax = 0.2
 protection_tax = 0.05
 
-if salary > 1604 and salary < 39058:
+if salary > 1604 and salary < 39058:#Om lönen är större än 1604 och mindre än 39058 körs denna kod
     print("\n")
 
     print("Utskrift")
@@ -16,7 +18,7 @@ if salary > 1604 and salary < 39058:
     kom_month_tax = salary * Municipal_tax
     print(f"Kvar efter skatt : {round(salary - local_month_tax - kom_month_tax)}kr")
 
-elif salary > 39058 and salary < 56308:
+elif salary > 39058 and salary < 56308:#Om lönen är större än39058 och mindre än 56308 körs denna kod
     print("\n")
 
     print("Utskrift")
@@ -29,7 +31,7 @@ elif salary > 39058 and salary < 56308:
     state_tax = salary * breakingpoint_tax
     print(f"Kvar efter skatt : {round(salary - local_month_tax - kom_month_tax - state_tax)}kr")
 
-elif salary > 56308:
+elif salary > 56308:#Om lönen är större än 56308 körs denna kod
     print("\n")
 
     print("Utskrift")
