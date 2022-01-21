@@ -4,7 +4,7 @@ print("Denna applikation gör ett antal beräkningar på en rektangel/rätblock.
 while True:
     side1=int(input("Ange rektangelns ena sida: "))
     side2=int(input("Ange rektangelns andra sida: "))
-    height=int(input("Ange rätblockets höjd: "))
+    height=int(input("Ange rätblockets höjd: "))#Ber om ett värde på höjden
     area=side1*side2
     a = "-"
     y = "|"
@@ -17,7 +17,7 @@ while True:
 
     print("Höjden | Volymen")
     print(f"{a:-^17}")
-    for i in range (1, height+1):
+    for i in range (1, height+1):#Höjden bestämmer hur mycket i tabellen som visas
         b = i*25
         print("{0: >7} |{1: >7}".format(i,b))
     repeat=input("Vill du göra en beräkning till (J/N)?")

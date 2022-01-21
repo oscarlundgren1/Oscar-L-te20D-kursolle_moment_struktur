@@ -19,6 +19,7 @@ while True:
     for i in range (1, 11):
         b = i*25
         print("{0: >7} |{1: >7}".format(i,b))
+    #Denna kod gör att du kan köra programmet igen om du vill
     repeat=input("Vill du göra en beräkning till (J/N)?")
     if repeat == "J":
         print("Programmet körs igen\n")
