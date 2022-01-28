@@ -2,9 +2,11 @@
 
 print("Denna applikation gör ett antal beräkningar på en rektangel/rätblock.\nAnge dina 3 sidor, endast heltal är tillåtet\n")
 while True:
+    recentcal = []
+    joined_string = "\n".join(recentcal)
     side1=int(input("Ange rektangelns ena sida: "))
     side2=int(input("Ange rektangelns andra sida: "))
-    height=int(input("Ange rätblockets höjd: "))
+    height=int(input("Ange rätblockets höjd: "))#Ber om ett värde på höjden
     area=side1*side2
     a = "-"
     y = "|"
@@ -15,14 +17,32 @@ while True:
     else:
         print("Eftersom sidorna är olika stora är denna en rektangel.")
 
-    print("Höjden | Volymen")
-    print(f"{a:-^17}")
-    for i in range (1, height+1):
-        b = i*25
-        print("{0: >7} |{1: >7}".format(i,b))
+    if height < 1:
+        print("Höjden | Volymen")
+        print(f"{a:-^17}")
+        for i in range (1, 1+1):#Höjden bestämmer hur mycket i tabellen som visas
+            b = i*25
+            print("{0: >7} |{1: >7}".format(i,b))
+            recentcal.append("{0: >7} |{1: >7}".format(i,b))
+    elif height > 11:
+        print("Höjden | Volymen")
+        print(f"{a:-^17}")
+        for i in range (1, 10+1):#Höjden bestämmer hur mycket i tabellen som visas
+            b = i*25
+            print("{0: >7} |{1: >7}".format(i,b))
+            recentcal.append("{0: >7} |{1: >7}".format(i,b))
+    else:
+        print("Höjden | Volymen")
+        print(f"{a:-^17}")
+        for i in range (1, height+1):#Höjden bestämmer hur mycket i tabellen som visas
+            b = i*25
+            print("{0: >7} |{1: >7}".format(i,b))
+            recentcal.append("{0: >7} |{1: >7}".format(i,b))
+
     repeat=input("Vill du göra en beräkning till (J/N)?")
     if repeat == "J":
         print("Programmet körs igen\n")
     else:
         print("Programmet avsultas...\n")
+        print(recentcal)
         exit()
