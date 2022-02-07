@@ -1,5 +1,3 @@
-# UPPGIFT C
-
 sida1 = []
 sida2 = []
 area = []
